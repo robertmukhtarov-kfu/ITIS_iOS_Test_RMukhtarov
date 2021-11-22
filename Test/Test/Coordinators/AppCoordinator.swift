@@ -35,7 +35,13 @@ class AppCoordinator: Coordinator {
     }
 
     private func showMainFlow() {
-        // TODO: main flow
-        navigationController.setViewControllers([MainViewController()], animated: true)
+        let mainCoordinator = MainCoordinator(navigationController: navigationController)
+        childCoordinators.append(mainCoordinator)
+        mainCoordinator.flowCompletionHandler = { [weak self] in
+            guard let self = self else { return }
+            self.childCoordinators.removeAll { $0 === mainCoordinator }
+            self.showStartFlow()
+        }
+        mainCoordinator.start()
     }
 }

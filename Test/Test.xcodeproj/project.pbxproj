@@ -25,7 +25,10 @@
 		7194EACE274BFBF300A2CBFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194EACD274BFBF300A2CBFF /* MainViewController.swift */; };
 		7194EAD0274BFC7200A2CBFF /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194EACF274BFC7200A2CBFF /* RegistrationCoordinator.swift */; };
 		7194EAD3274BFDFD00A2CBFF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194EAD2274BFDFD00A2CBFF /* UserService.swift */; };
-		7194EAD7274BFF4F00A2CBFF /* AuthorizationCoordinator copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194EAD6274BFF4F00A2CBFF /* AuthorizationCoordinator copy.swift */; };
+		7194EAD7274BFF4F00A2CBFF /* AuthorizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194EAD6274BFF4F00A2CBFF /* AuthorizationCoordinator.swift */; };
+		7194EAD9274C091300A2CBFF /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194EAD8274C091300A2CBFF /* ActivityService.swift */; };
+		7194EADB274C096B00A2CBFF /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194EADA274C096B00A2CBFF /* Activity.swift */; };
+		7194EADD274C0CC300A2CBFF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194EADC274C0CC300A2CBFF /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +51,10 @@
 		7194EACD274BFBF300A2CBFF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7194EACF274BFC7200A2CBFF /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		7194EAD2274BFDFD00A2CBFF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		7194EAD6274BFF4F00A2CBFF /* AuthorizationCoordinator copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthorizationCoordinator copy.swift"; sourceTree = "<group>"; };
+		7194EAD6274BFF4F00A2CBFF /* AuthorizationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCoordinator.swift; sourceTree = "<group>"; };
+		7194EAD8274C091300A2CBFF /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		7194EADA274C096B00A2CBFF /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		7194EADC274C0CC300A2CBFF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +116,9 @@
 			children = (
 				7194EAAF274BEEE600A2CBFF /* AppCoordinator.swift */,
 				7194EAB6274BF35200A2CBFF /* StartCoordinator.swift */,
-				7194EAD6274BFF4F00A2CBFF /* AuthorizationCoordinator copy.swift */,
+				7194EAD6274BFF4F00A2CBFF /* AuthorizationCoordinator.swift */,
 				7194EACF274BFC7200A2CBFF /* RegistrationCoordinator.swift */,
+				7194EADC274C0CC300A2CBFF /* MainCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				7194EABE274BF92D00A2CBFF /* User.swift */,
+				7194EADA274C096B00A2CBFF /* Activity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				7194EAD2274BFDFD00A2CBFF /* UserService.swift */,
+				7194EAD8274C091300A2CBFF /* ActivityService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -273,12 +282,15 @@
 				7194EAA9274BEE1700A2CBFF /* Coordinator.swift in Sources */,
 				7194EA92274BEB1200A2CBFF /* AppDelegate.swift in Sources */,
 				7194EAC6274BFA7900A2CBFF /* LoginViewController.swift in Sources */,
+				7194EAD9274C091300A2CBFF /* ActivityService.swift in Sources */,
 				7194EAC4274BF99C00A2CBFF /* UIViewController+Extensions.swift in Sources */,
+				7194EADB274C096B00A2CBFF /* Activity.swift in Sources */,
 				7194EAD3274BFDFD00A2CBFF /* UserService.swift in Sources */,
 				7194EAAB274BEE2F00A2CBFF /* FlowController.swift in Sources */,
 				7194EABC274BF7B500A2CBFF /* StartViewController.swift in Sources */,
 				7194EAC8274BFAF200A2CBFF /* PasswordViewController.swift in Sources */,
-				7194EAD7274BFF4F00A2CBFF /* AuthorizationCoordinator copy.swift in Sources */,
+				7194EADD274C0CC300A2CBFF /* MainCoordinator.swift in Sources */,
+				7194EAD7274BFF4F00A2CBFF /* AuthorizationCoordinator.swift in Sources */,
 				7194EACE274BFBF300A2CBFF /* MainViewController.swift in Sources */,
 				7194EABA274BF3E200A2CBFF /* AuthorizationViewController.swift in Sources */,
 				7194EA94274BEB1200A2CBFF /* SceneDelegate.swift in Sources */,
