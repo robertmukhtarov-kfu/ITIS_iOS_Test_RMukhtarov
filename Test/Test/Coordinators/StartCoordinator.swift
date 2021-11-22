@@ -35,7 +35,7 @@ final class StartCoordinator: Coordinator {
             }
         }
         
-        navigationController.pushViewController(vc, animated: true)
+        navigationController.setViewControllers([vc], animated: true)
     }
 
     func showAuthorizationFlow() {
